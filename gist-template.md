@@ -1,10 +1,14 @@
-# Title (replace with your title)
+# Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+In this tutorial, I will be going over the regular expression, or Regex, for URLs. 
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+We will go over the Regex for matching a URL: 
+
+`https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)`
+
+We will be breaking down each part of this regex and explain its function.
 
 ## Table of Contents
 
@@ -24,11 +28,19 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Anchors
 
+Types of  URL regex anchors are a caret `^`, and a dollar `$`. These symbols specify the start and end of the string. It is recommended that you always use anchors, even when your regex would match without them. 
+
 ### Quantifiers
+
+A quantifier tells the engine how many instances of its quantified token or subpattern can appear. 
 
 ### OR Operator
 
+Denoted with a vertical line character |, the OR operator tells the engine to allow only between the two specified characters. An example of this would be: `ap|ple` is translated to `ap` or `ple`.  We do not use this symbol in URL regex. 
+
 ### Character Classes
+
+
 
 ### Flags
 
